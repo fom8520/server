@@ -36,7 +36,11 @@ function savaData(data) {
 
 };
 
-
+function getData(args, opt, callback){
+    var err="NG";
+    var result=list;
+    callback(err,resull)
+}
 
 
 function add(args, opt, callback) {
@@ -55,6 +59,7 @@ function add(args, opt, callback) {
 }
 
 server.expose('add', add);
+server.expose('getData',getData);
 
 // you can expose an entire object as well:
 
